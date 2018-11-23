@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TagsLayout">
+
+        <attr name="tags_background" format="reference|color"/>
+        <attr name="tags_padding" format="dimension"/>
+        <attr name="tags_margin" format="dimension"/>
+        <attr name="tags_text_size" format="dimension"/>
+        <attr name="tags_text_color" format="color"/>
+    </declare-styleable>
+
+</resources>

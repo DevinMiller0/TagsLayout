@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tag="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorTagsText"
+            android:text="猜你想找" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="18dp"
+            android:src="@mipmap/icon_switch"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/text_switch"/>
+
+        <TextView
+            android:id="@+id/text_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorTagsText"
+            android:layout_marginRight="10dp"
+            android:text="换一换"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RelativeLayout>
+
+    <com.tag.tagsdemo.TagsLayout
+        android:id="@+id/tags_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tag:tags_background="@drawable/bg_tags"
+        tag:tags_margin="12dp"
+        tag:tags_padding="8dp"
+        tag:tags_text_color="@color/colorTagsText"
+        tag:tags_text_size="5sp">
+
+    </com.tag.tagsdemo.TagsLayout>
+
+</LinearLayout>
